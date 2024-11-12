@@ -1,0 +1,82 @@
+.Header {
+  background-color: #fff;
+  box-shadow: var(--shadow-primary);
+  height: 100px;
+}
+
+.Header .header_wapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.Header .header_wapper .iconMenu {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .Header .header_wapper .iconMenu {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.Header .header_wapper .header_info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Header .header_wapper .header_info .Notification span {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 12px;
+  padding: 2px 5px;
+  background-color: var(--color-primary);
+  color: var(--text-white);
+  border-radius: 60%;
+  border: 1px solid var(--text-white);
+}
+
+.Header .header_wapper .header_info .infoUser {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.Header .header_wapper .header_info .infoUser .infoUser_title {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  cursor: pointer;
+}
+
+.Header .header_wapper .header_info .infoUser .infoUser_title h4 {
+  font-size: 20px;
+  margin: 0;
+  line-height: 20px;
+}
+
+.Header .header_wapper .header_info .infoUser .infoUser_title span {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.Header .header_wapper .header_info .infoUser h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.Header .header_wapper .header_info .infoUser img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}

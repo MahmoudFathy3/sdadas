@@ -1,0 +1,223 @@
+/* Forms */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px 50px 10px;
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding: 50px 10px 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .form {
+    padding: 50px 10px 10px;
+  }
+}
+
+.form .form_wapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(96% / 1), 1fr));
+
+  gap: 20px;
+}
+
+@media (min-width: 767px) {
+  .form .form_wapper {
+    grid-template-columns: repeat(auto-fit, minmax(calc(96% / 3), 1fr));
+  }
+}
+
+/* 
+@media (min-width: 1200px) {
+  .form .form_wapper {
+    grid-template-columns: minmax(calc(96% / 3), 1fr);
+  }
+} */
+
+.form label {
+  font-weight: bold;
+  font-family: var(--font-family);
+}
+
+.form input {
+  position: relative;
+  width: 100% !important;
+}
+
+.form .Add {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  align-self: end;
+  height: fit-content;
+  padding: 3px;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+/* Forms Button */
+.form .form_buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px 0 10px;
+}
+
+.form .form_buttons button {
+  padding: 13px 40px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--font-family);
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form .form_buttons button:first-of-type {
+  background-color: var(--color-primary);
+  color: var(--text-white);
+}
+
+.form .form_buttons button:last-of-type {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.form .form_buttons button:nth-child(1) {
+  background-color: var(--color-primary);
+  color: var(--text-white);
+}
+
+.form .form_buttons button:hover {
+  opacity: 1;
+}
+
+/* Form Complaints */
+
+.Complaints {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.Complaints :is(input, textarea) {
+  width: 100%;
+  height: 300px;
+}
+
+.Complaints textarea {
+  height: 330px;
+  resize: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Complaints textarea:hover {
+  border-color: #333;
+}
+
+.Complaints textarea:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: #006bff;
+}
+
+/* Form Invoices */
+.Invoice {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Invoice .FormInvoices {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .Invoice .FormInvoices {
+    grid-template-columns: auto;
+  }
+}
+
+.Invoice .FormInvoices :is(input, select) {
+  width: 100%;
+}
+
+.Invoice .InvoiceWapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Invoice .InvoiceWapper .form_table {
+  padding-top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .Invoice .InvoiceWapper .form_table {
+    flex-direction: column;
+  }
+}
+
+.Invoice .InvoiceWapper .form_table .wapperForm {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .Invoice .InvoiceWapper .form_table .wapperForm {
+    width: 100%;
+  }
+}
+
+.Invoice .InvoiceWapper .form_table .wapperForm :is(input, select) {
+  width: 100%;
+}
+
+.Invoice .InvoiceWapper .tableInvoice {
+  width: 70%;
+  box-shadow: var(--shadow-primary);
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .Invoice .InvoiceWapper .tableInvoice {
+    width: 100%;
+  }
+}
+
+.Invoice .InvoiceWapper .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .Invoice .InvoiceWapper .total {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}

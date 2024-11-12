@@ -1,0 +1,77 @@
+.Statistics {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+@media (min-width: 767px) {
+  .Statistics {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Statistics {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+.Statistics .Stats_element {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+}
+
+@media (min-width: 1600px) {
+  .Statistics .Stats_element {
+    padding: 20px 40px;
+  }
+}
+
+.Statistics .Stats_element h3 {
+  font-size: 30px;
+  color: var(--text-white);
+}
+
+.Statistics .Stats_element:first-of-type {
+  background-color: rgba(233, 65, 100, 1);
+}
+.Statistics .Stats_element:nth-child(2) {
+  background-color: rgba(248, 192, 98, 1);
+}
+.Statistics .Stats_element:nth-child(3) {
+  background-color: rgba(83, 210, 133, 1);
+}
+.Statistics .Stats_element:last-of-type {
+  background-color: rgba(62, 93, 184, 1);
+}
+
+.Statistics .Stats_element .element_title {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Statistics .Stats_element .element_title h4 {
+  font-size: 20px;
+  color: var(--text-white);
+}
+
+.Statistics .Stats_element .element_title .title_icon {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Statistics .Stats_element .element_title .title_icon .icon {
+  font-size: 30px;
+  color: #666;
+}

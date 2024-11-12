@@ -1,0 +1,146 @@
+.Sidebar {
+  width: 100%;
+  position: absolute;
+  z-index: 10002;
+}
+
+.Sidebar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-bottom: 1px solid #e9e9f5;
+  color: var(--text-white);
+}
+
+.Sidebar .List {
+  margin-top: 30px;
+}
+
+.Sidebar .List ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+  margin: 0 10px;
+}
+
+.Sidebar .List ul .title {
+  padding: 15px 10px 10px;
+  font-weight: bold;
+  color: #bbb;
+  user-select: none;
+}
+
+.Sidebar .List ul .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--text-white);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Sidebar .List ul .item.active {
+  background-color: var(--bg-active);
+}
+
+.Sidebar .List ul .item:hover {
+  padding-right: 15px;
+  background-color: var(--bg-active);
+}
+
+.Sidebar .List ul .item li {
+  color: var(--text-white);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.Sidebar .List ul a {
+  text-decoration: none;
+  color: var(--text-white);
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.Sidebar .List ul a.isActive {
+  background-color: var(--bg-active);
+}
+
+.Sidebar .List ul a li {
+  padding: 10px;
+}
+
+.Sidebar .List .Dropdown {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  padding: 10px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.Sidebar .List .Dropdown a {
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sidebar .List .Dropdown p {
+  text-align: center;
+}
+
+.Sidebar .List .Dropdown a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-right: "none" !important;
+}
+
+/* logout */
+
+.Sidebar .logout {
+  width: fit-content;
+  margin: 50px auto 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--text-white);
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+/* #ff5252 */
+
+.Sidebar .logout button {
+  border: none;
+  color: var(--text-white);
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+.Sidebar .logout:hover {
+  opacity: 1;
+}

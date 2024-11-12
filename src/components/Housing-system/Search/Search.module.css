@@ -1,0 +1,26 @@
+.Search {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: fit-content;
+}
+.Search .icon {
+  color: #555;
+  font-size: 25px;
+}
+.Search input {
+  width: 200px;
+  padding: 10px 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.Search input:focus {
+  outline: none;
+}
+
+.Search input:focus::placeholder {
+  opacity: 0;
+}

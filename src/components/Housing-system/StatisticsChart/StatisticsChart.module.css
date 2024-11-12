@@ -1,0 +1,207 @@
+.StatisticsChart {
+  margin-top: 80px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: var(--shadow-primary);
+}
+
+.StatisticsChart .StatisticsChart_content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 80px 30px;
+}
+
+@media (min-width: 1400px) {
+  .StatisticsChart .StatisticsChart_content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.StatisticsChart .StatisticsChart_content .left {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .StatisticsChart .StatisticsChart_content .left {
+    justify-content: space-between;
+  }
+}
+
+.StatisticsChart .StatisticsChart_content .left .element_chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+@media (min-width: 1400px) {
+  .StatisticsChart .StatisticsChart_content .left .element_chart {
+    gap: 30px;
+  }
+}
+
+.StatisticsChart .StatisticsChart_content .left .element_chart .chart {
+  width: 10px;
+  border-radius: 20px;
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .left
+  .element_chart
+  .chart:first-of-type {
+  background-color: rgba(237, 91, 117, 1);
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .left
+  .element_chart
+  .chart:nth-child(2) {
+  background-color: rgba(79, 223, 177, 1);
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .left
+  .element_chart
+  .chart:last-of-type {
+  background-color: rgba(251, 177, 66, 1);
+}
+
+.StatisticsChart .StatisticsChart_content .left .element_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.StatisticsChart .StatisticsChart_content .left .element_info .info {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  font-weight: bold;
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .left
+  .element_info
+  .info:first-of-type {
+  color: rgba(79, 223, 177, 1);
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .left
+  .element_info
+  .info:nth-child(2) {
+  color: rgba(251, 177, 66, 1);
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .left
+  .element_info
+  .info:last-of-type {
+  color: rgba(237, 91, 117, 1);
+}
+
+.StatisticsChart .StatisticsChart_content .left .element_info .info .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .left
+  .element_info
+  .info:first-of-type
+  .circle {
+  background-color: rgba(79, 223, 177, 1);
+}
+.StatisticsChart
+  .StatisticsChart_content
+  .left
+  .element_info
+  .info:nth-child(2)
+  .circle {
+  background-color: rgba(251, 177, 66, 1);
+}
+.StatisticsChart
+  .StatisticsChart_content
+  .left
+  .element_info
+  .info:last-of-type
+  .circle {
+  background-color: rgba(237, 91, 117, 1);
+}
+
+/* Right */
+
+.StatisticsChart .StatisticsChart_content .right {
+  flex: 1;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px 10px;
+}
+
+.StatisticsChart .StatisticsChart_content .right .element_right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-self: center;
+  gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .StatisticsChart .StatisticsChart_content .right .element_right {
+    flex-direction: column;
+  }
+}
+
+.StatisticsChart .StatisticsChart_content .right .element_right .element_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .right
+  .element_right
+  .element_info
+  h4 {
+  color: rgba(150, 151, 154, 1);
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .right
+  .element_right
+  .element_info
+  p {
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.StatisticsChart
+  .StatisticsChart_content
+  .right
+  .element_right
+  .element_info
+  span {
+  color: rgba(45, 203, 114, 1);
+  font-weight: bold;
+}
